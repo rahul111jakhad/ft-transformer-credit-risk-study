@@ -1,0 +1,39 @@
+# Loose version pins — anything matching the major version constraints below
+# should run all notebooks (baselines + FT-Transformer). Tested with latest
+# releases as of mid-2026.
+
+# Core
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+pyarrow>=12.0          # parquet I/O
+
+# Deep learning
+torch>=2.0
+delu>=0.0.21           # deep learning utilities (used by all FTT notebooks)
+rtdl_revisiting_models>=0.0.2  # upstream FTTransformer reference
+
+# Optimizers
+lion-pytorch>=0.1.2
+
+# Gradient boosting
+xgboost>=2.0
+
+# Hyperparameter search & logging
+optuna>=3.5
+tqdm>=4.66
+
+# Interpretation (used by baseline notebooks)
+shap>=0.44
+
+# Persistence
+joblib>=1.3
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.13
+
+# Notebook environment
+jupyterlab>=4.0
+ipywidgets>=8.0

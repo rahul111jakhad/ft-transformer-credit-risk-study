@@ -1,0 +1,67 @@
+# ─── Raw + preprocessed datasets ────────────────────────────────────────────
+# Not shipped with the repo. Drop your local copies under data/.
+data/
+**/data/
+
+# ─── Per-run experiment outputs ─────────────────────────────────────────────
+# Models, JSON trial logs, figures, per-run CSVs.
+artifacts/
+**/artifacts/
+
+# Catch any results folders that show up anywhere
+# (e.g. artifacts/<dataset>/results/, ad-hoc results/ at repo root, etc.)
+results/
+**/results/
+
+# ─── Model checkpoints and serialized objects ───────────────────────────────
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.pkl
+*.joblib
+
+# ─── Tabular data files (shouldn't end up outside data/, but belt+suspenders)
+*.parquet
+*.parquet.gzip
+*.feather
+*.csv.gz
+
+# ─── Optuna studies persisted as SQLite ─────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Python build / cache ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─── Jupyter ────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+.jupyter/
+
+# ─── Virtual environments ───────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Editors / OS ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/

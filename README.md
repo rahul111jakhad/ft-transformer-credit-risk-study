@@ -66,8 +66,7 @@ The two notebook *types* differ on purpose:
   paths are uniform across both datasets, and write all per-run artifacts
   through `ExperimentLogger`.
 - **FT-Transformer / SAINT / ExcelFormer notebooks** (`notebooks/<dataset>/`)
-  are deliberately kept **self-contained** and close in spirit to the original
-  experiment notebooks they were refactored from. Each one inlines its own
+  are **self-contained** and each one inlines its own
   preprocessing block, defines its own model class (the modifications **are**
   the experiment), and writes its own checkpoints / JSON / figures to
   `artifacts/<dataset>/{models,results,figures}/`. They do **not** import
